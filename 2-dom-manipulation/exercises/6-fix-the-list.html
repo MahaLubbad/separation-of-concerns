@@ -46,6 +46,38 @@
           debugger;
 
           // write me! (... without using cloneNode, that's kind of cheating)
+          // modifing list elemnt
+          const actual = document.getElementById('actual');
+          const listElement = actual.children[0];
+          listElement.children[1].innerText='solar systems';
+          const childToRemove = listElement.children[3];
+          listElement.removeChild(childToRemove);
+
+            //adding title 
+            const h1El = document.createElement('h1');
+          h1El.innerText = 'a list of things';
+          document.getElementById('actual').prepend(h1El)
+
+
+          // change ol into ul
+          
+          const orderedList = actual.children[1];
+          console.log(orderedList.children);
+
+
+          const unorderedList = document.createElement('ul');
+
+        const numChildren = orderedList.children.length;
+        for (let i = 0; i < numChildren; i++) {
+            const nextChild = orderedList.children[i].cloneNode(true);
+          unorderedList.appendChild(nextChild);
+          }
+
+        actual.replaceChild( unorderedList, orderedList);
+
+        
+
+
         </script>
       </div>
 

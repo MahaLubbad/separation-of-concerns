@@ -44,7 +44,15 @@
           'use strict';
           debugger;
 
-          // write me! (... without using cloneNode, that's kind of cheating)
+          const actual = document.getElementById('actual');
+          const l2Element = actual.children[0];
+          l2Element.children[1].innerText='solar systems';
+
+          const h1El = document.createElement('h1');
+          h1El.innerText = 'a list of things';
+          document.getElementById('actual').prepend(h1El);
+
+
         </script>
       </div>
 
