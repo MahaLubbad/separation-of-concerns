@@ -1,3 +1,4 @@
+/*
 document
   .getElementById('user-interface')
   .addEventListener('mousemove', (event) => {
@@ -17,3 +18,9 @@ document
     console.log('x:', xValue);
     console.log('y:', yValue);
   });
+*/
+
+import listeners from "./listener.js";
+
+//Attach listeners
+listeners();

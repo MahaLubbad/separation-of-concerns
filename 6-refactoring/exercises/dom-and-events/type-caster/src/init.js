@@ -1,3 +1,4 @@
+/*
 document.getElementById('user-action').addEventListener('click', (event) => {
   debugger;
   // read & process user input
@@ -27,3 +28,10 @@ document.getElementById('user-action').addEventListener('click', (event) => {
   console.log('intendedType:', intendedType);
   console.log('newValue:', newValue);
 });
+*/
+
+
+import listeners from "./listener.js";
+
+//Attach listeners
+listeners();

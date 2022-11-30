@@ -1,3 +1,4 @@
+/*
 document.getElementById('input').addEventListener('keyup', (event) => {
   debugger;
   // read and process user input
@@ -17,3 +18,9 @@ document.getElementById('input').addEventListener('keyup', (event) => {
   console.log('input:', input);
   console.log('reversedUppercase:', reversedUppercase);
 });
+*/
+
+import listeners from "./listener";
+
+//Attach listeners
+listeners();

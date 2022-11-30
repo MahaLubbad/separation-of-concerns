@@ -1,3 +1,4 @@
+/*
 const bulletPoint = '*'; // data to refactor out of this file
 
 document.getElementById('list-them').addEventListener('click', () => {
@@ -23,3 +24,8 @@ document.getElementById('list-them').addEventListener('click', () => {
   const message = `all items:${stringList}`;
   alert(message);
 });
+*/
+import listeners from "./listener.js";
+
+//Attach listeners
+listeners();

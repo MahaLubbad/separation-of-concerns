@@ -1,3 +1,4 @@
+/*
 document.getElementById('swap-button').addEventListener('click', () => {
   // read & process user input
   let userInput = null;
@@ -23,3 +24,12 @@ document.getElementById('swap-button').addEventListener('click', () => {
   // communicate result to user
   alert(capSwapped);
 });
+*/
+
+import listeners from "./listener.js";
+
+//Attach listeners
+listeners();
+
+
+
