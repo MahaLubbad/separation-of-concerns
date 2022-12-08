@@ -1,5 +1,5 @@
 import { list } from './util.js';
-import { bulletPoint } from './data.js';
+//import { bulletPoint } from './data.js';
 
 export const listHandler = () => {
     const allInputs = [];
@@ -12,9 +12,9 @@ export const listHandler = () => {
         acceptingInput = false;
       }
     }
-    let bulletpoint1 = '*';
-    const bulletPointEntered = bulletPoint(bulletpoint1)
-    const stringList = list(allInputs, bulletPointEntered);
+    //let bulletpoint1 = '*';
+    //const bulletPointEntered = bulletPoint(bulletpoint1)
+    const stringList = list(allInputs);
 
     const message = `all items:${stringList}`;
     alert(message);

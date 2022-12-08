@@ -1,3 +1,4 @@
+/*
 document.getElementById('replacing').addEventListener('click', () => {
   debugger;
   // read & process user input
@@ -40,3 +41,6 @@ document.getElementById('replacing').addEventListener('click', () => {
   // communicate result to user
   alert(`${stringToReplacify}\n${newString}`);
 });
+*/
+import listener from "./listener.js";
+listener();

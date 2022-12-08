@@ -7,4 +7,15 @@
  */
 export const paragraph = (text, classList = []) => {
   // see the last example for a hint
+  const pEl = document.createElement('p');
+  pEl.innerText = text;
+  pEl.innerHTML = text;
+  for (const className of classList){
+    pEl.classList.add(className);
+   
+
+  }
+  
+  
+  return pEl;
 };
